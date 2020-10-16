@@ -1,0 +1,1 @@
+setInterval(function(){ document.querySelector("#root > div > main > div > aside > div.p-checkout-summary.show-for-large.o-checkout-summary > dl > dd:nth-child(2)").textContent= '$' + document.querySelector("#checkout-donation").value + '.00'; }, 2000);
