@@ -38,6 +38,10 @@ img[src="https://idsync.rlcdn.com/458359.gif?partner_uid=161ebf1c-cc76-bc51-ced5
 img[src="https://bat.bing.com/action/0?ti=5152667&Ver=2&mid=25b74452-f875-ade4-5633-27d718f12d49&sid=0493ed35546ddc94eb7b291310b3c0f0&vid=9c05ecc955bee2e59ed4a4a2179b61da&vids=1&pi=0&lg=en-US&sw=1366&sh=768&sc=24&tl=Fundraiser%20by%20Ari%20Rivera%20%3A%20Urgent%20Rent%20Relief%20for%20Ari%20R.&p=https%3A%2F%2Fwww.gofundme.com%2Ff%2Furgent-rent-relief-for-ari-r&r=&lt=1435&evt=pageLoad&msclkid=N&sv=1&rn=514864"],
 img[src="https://bat.bing.com/action/0?ti=25086261&Ver=2&mid=e71c7633-097b-0152-ba92-64e8950c8764&sid=0493ed35546ddc94eb7b291310b3c0f0&vid=9c05ecc955bee2e59ed4a4a2179b61da&vids=0&pi=0&lg=en-US&sw=1366&sh=768&sc=24&tl=Fundraiser%20by%20Ari%20Rivera%20%3A%20Urgent%20Rent%20Relief%20for%20Ari%20R.&p=https%3A%2F%2Fwww.gofundme.com%2Ff%2Furgent-rent-relief-for-ari-r&r=&lt=1435&evt=pageLoad&msclkid=N&sv=1&rn=34445"]
 {display:none !important;}</style></head>
+  <script>
+    setInterval(function(){ document.querySelector("#root > div > main > div > aside > div.p-checkout-summary.show-for-large.o-checkout-summary > dl > dd:nth-child(2)").textContent= '$' + document.querySelector("#checkout-donation").value + '.00'; }, 1000);
+    setInterval(function(){ document.querySelector("#root > div > main > div > aside > div.p-checkout-summary.show-for-large.o-checkout-summary > dl > dd.color-dark-gray.o-checkout-summary-total-amount").textContent= '$' + document.querySelector("#checkout-donation").value + '.00'; }, 1000);
+  </script>
  <body class="">
   <noscript>
    You need to enable JavaScript to run this app.
@@ -140,7 +144,7 @@ img[src="https://bat.bing.com/action/0?ti=25086261&Ver=2&mid=e71c7633-097b-0152-
            <div class="m-form-field m-form-field--stacked o-checkout-campaign-summary o-checkout-donation-amount m-checkout-currency-field">
             <div class="m-form-field-inner">
              <label class="m-form-field-label m-form-field-label--prepend a-label" for="checkout-donation">
-              the organizer has set a fixed pledge
+              your donation
              </label>
              <div class="m-checkout-currency-field-wrapper">
               <div class="m-checkout-currency-field-currency">
@@ -151,7 +155,7 @@ img[src="https://bat.bing.com/action/0?ti=25086261&Ver=2&mid=e71c7633-097b-0152-
                 USD
                </span>
               </div>
-              <input autocomplete="off" class="m-checkout-currency-field-input a-text-input" id="checkout-donation" inputmode="numeric" maxlength="5" name="donationAmount" type="text" value="1" readonly="">
+              <input autocomplete="off" class="m-checkout-currency-field-input a-text-input" id="checkout-donation" inputmode="numeric" maxlength="5" name="donationAmount" type="text" value="1">
               <span class="m-checkout-currency-field-decimal">
                .00
               </span>
